@@ -1,0 +1,12 @@
+install tailwind
+1. buat file index.html
+2. npm init -y
+3. npm i tailwindcss
+4.npx tailwindcss init
+5. konfigurasi config.js
+6. memasang di dalam file yang kita buat (input)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+7.buka package.json
+"dev" : "tailwindcss -i ./(namafile Input) -o./(namafile Output) --watch

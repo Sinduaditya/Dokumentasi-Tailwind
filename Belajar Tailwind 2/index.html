@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extends: {
+                    spacing: {
+                        13: "4.25rem",
+                    },
+                    fontFamiliy: {
+                        inter: ["Inter"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <h1 class="text-8xl font-bold my-10 text-center">
+        Mari Kita Belajar
+        <span class="bg-gradient-to-r from-blue-300 to-teal-400 bg-clip-text text-transparent">Tailwind</span
+      >
+    </h1>
+    <section
+      class="-mb-10 bg-gradient-to-r from-indigo-200 via-red-300 to-yellow-200"
+    >
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-14 text-center">Margin</div>
+      <div class="py-8">Padding</div>
+      <!-- py = padding Sumbu y
+                    px = padiing Sumbu X
+                    pl = padding left    
+                -->
+    </section>
+    <section>
+      <div class="mb-10 bg-green-200">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-yellow-300">Kotak 1</div>
+        <!-- <div class="max-x-ws min-h-screen">Kotak 2</div> -->
+      </div>
+    </section>
+
+    <section class="font-inter max-w-3xl m-auto">
+      <h2 class="mb-2 text-lg font-bold">
+        Belajar mengenai Typografi TailwindCSS
+      </h2>
+      <div class="mb-4 text-lg text-green-600">
+        By
+        <a href="#" class="text-gray-500 font-semibold">Sindu Aditya Janadi</a>
+      </div>
+      <p class="mb-4">
+        Lorem, ipsum dolor sit amet
+        <a href="#" class="underline font-bold text-blue-600"> consectetur</a>
+        adipisicing elit. Vitae aliquid deserunt saepe. Ex, quas sapiente!
+        Veritatis, aperiam dolor? Libero molestias placeat quo pariatur
+        consectetur mollitia dolores impedit officia et nesciunt. Error eius
+        nihil cumque, omnis ea, vel architecto commodi aut hic provident magni,
+        laboriosam repudiandae voluptas nulla voluptatibus officia corporis?
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem isum dolor sit amet consectetur adipisicing elit. Ea eligendi
+        odio non quis adipisci, provident culpa quas quaerat. Accusantium,
+        beatae"
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
+        explicabo? Quaerat inventore delectus quibusdam. Optio fugit reiciendis
+        quos porro asperiores quisquam libero aliquid fugiat commodi, numquam,
+        hic amet id unde?
+      </p>
+    </section>
+    <!-- Dengan menambah [42px maka akan menambah nialai yang nilainya tidak ada didalam tailwind] -->
+    <div
+      class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed"
+      style="
+        background-image: url('https://source.unsplash.com/1000x600?whitesky');
+      "
+    >
+      <p class="p-5 text-2xl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium non
+        libero magnam voluptatem maiores esse atque quae nulla ea minima optio
+        porro, ad dolores eaque quam! Nobis ipsa sint, cumque dolores porro
+        necessitatibus enim earum ducimus veritatis tenetur non quae perferendis
+        ipsum molestias sapiente ab quibusdam architecto quia exercitationem?
+        Possimus explicabo perferendis sunt tenetur ad, laudantium nostrum
+        cumque repudiandae atque odio qui eaque ipsa officia accusamus quo est
+        repellat doloribus quasi consequuntur. Mollitia repudiandae est in
+        expedita dolore dicta vel. Ullam velit aut, totam, aspernatur iste
+        architecto nulla sequi quia doloremque saepe quod dolorum tempora
+        necessitatibus vel recusandae fugit maxime non a laboriosam qui rerum.
+        Cumque placeat necessitatibus delectus voluptatem. Modi obcaecati,
+        temporibus assumenda facilis repudiandae molestias ipsum sed deserunt
+        reiciendis velit, doloremque fuga explicabo libero, dolor maiores quasi.
+        Odit ullam mollitia blanditiis commodi veniam facilis ipsa illum,
+        veritatis architecto totam, similique omnis cupiditate aut distinctio
+        quos quod dolor odio non accusantium? Inventore similique eaque, quo
+        atque officiis harum! Eius consectetur quas sequi veritatis quod
+        molestias explicabo, cumque unde ea vel consequatur deserunt optio
+        aperiam animi ducimus perspiciatis dolores quidem tempore quibusdam.
+        Explicabo sint nisi odio vel ab! Enim natus illo repellat dicta incidunt
+        provident sapiente nihil sint repudiandae similique?
+      </p>
+      <!-- bg-fixed = gambar diam namun saat scrol web gambar paralax ?? BAGUSS
+           bg-local = tulisan dan gambar akan nempel
+           bg-scroll = tulisan gerak gambar diam -->
+    </div>
+
+    <!-- Size bg -->
+    <!-- effect -->
+    <div
+      class="mt-32 max-w-xl h-96 mx-auto bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-yellow-400 opacity-90 overflow-hidden border-8 flex"
+      style="background-image: url('./image/1.jpg')"
+    >
+      <!-- <div class="w-full h-full bg-teal-400 mix-blend-darken"></div> -->
+      <div
+        class="w-[200px] h-[200px] bg-white/30 backdrop-blur-md m-auto rounded-full"
+      ></div>
+    </div>
+    <hr class="my-20" />
+    <!-- Membuat Tombol -->
+    <button
+      class="bg-sky-500 rounded-full block mx-auto text-white font-inter font-semibold my-10 py-2 px-5 hover:bg-sky-700 active:bg-sky-800 focus:ring focus:ring-sky-400"
+    >
+      Simpan
+    </button>
+    <!-- Grouping -->
+    <!-- di dalam div untuk mx-auto tidak menggunakan block agar berpindah karena default nya div sudah berupa Block -->
+    <div
+      class="max-w-lg my-10 border-slate-200 rounded-xl mx-auto p-5 shadow-md shadow-black font-inter hover:bg-sky-400 group"
+    >
+      <!-- Agar saat div di atas bergerak maka tulisan akan otomatis berubah warna karena efek group hover -->
+      <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white">
+        My Card
+      </h5>
+      <p
+        class="text-slate-600 group-hover:text-white selection:bg-lime-400 selection:text-slate-700"
+      >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+        consequuntur iusto quas facere porro veritatis magnam quam voluptatibus
+        et maxime quo eaque quod praesentium sed, accusantium unde. Nihil, ipsum
+        porro.
+      </p>
+    </div>
+
+    <div class="mb-96"></div>
+  </body>
+</html>
